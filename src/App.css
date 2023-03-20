@@ -1,38 +1,233 @@
+
+
+body{
+  font-family: "Hahmlet", serif;
+  margin: 40px;
+  background-image: url(https://images.pexels.com/photos/296234/pexels-photo-296234.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+
+} 
+
+
+hr{
+  width: 20%;
+  margin: 10px auto;
+  color: black;
+  padding: 1px;
+  
+}
+
+ul{
+margin: 0;
+padding: 0;
+
+}
+li{
+list-style-type: none;
+
+}
+
+
+a{
+  color: rgb(156, 155, 155);
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+  cursor: default;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-box{
+   width: 40%;
+   margin: 0 auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.search-bar{
+
+  display: block;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-city{
+
+  color: rgb(156, 155, 155);
+  background-color: white;
+  border-color: rgb(196, 194, 194);
+  border-style: solid;
+  border-radius: 30px;
+  padding: 10px 10px;
+  display: block;
+  margin: 25px auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.location-search-button{
+  height: 20%;
+  color: rgb(156, 155, 155);
+  background-color: white;
+  border-color: rgb(196, 194, 194);
+  border-style: solid;
+  border-width: 1 px;
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin: 25px auto;
+  display: block;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.current-location-btn{
+  color: rgba(255, 255, 255, 0.815);
+  background-color: rgba(128, 128, 128, 0);
+  border-color: rgb(255, 234, 234);
+  border-style: solid;
+  border-width: 1 px;
+  border-radius: 30px;
+  padding: 5px 5px;
+  margin: 0px  auto;
+  display: block;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*current weather */
+
+.current-weather-box{
+
+  background-color: rgb(174, 205, 212);
+  background-size: cover;
+  margin: 10px auto;
+  padding: 30px 20px 20px 20px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 1px;
+  color: rgb(156, 155, 155);
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+.searched-city{
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+
+}
+
+.last_updated{
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.date{
+  font-size: 12px;
+  margin-bottom: 5px;
+
+}
+
+.time {
+
+  font-size: 12px;
+}
+
+
+.current-temperature-total{
+  font-size: 70px;
+  font-weight: 500;
+  padding: 0 0 0 40px;
+  margin: 0;
+
+}
+
+
+.weather-description{
+  padding: 0;
+  margin: 0;
+
+}
+
+.weather-description::first-letter{
+  text-transform: capitalize;
+}
+
+.metric-switch{
+  margin-bottom: 50px;
+  margin-right: 10px;
+  
+
+
+}
+
+
+
+/*weather forecast */
+
+.weather-forecast-box{
+  text-align: center;
+  margin: 30px auto;   
+
+
+
+}
+
+.weather-forecast-day{
+ 
+  background-color: rgba(185, 234, 255, 0.9);
+  padding: 15px 15px;
+  margin: 20px;
+  border: solid;
+  border-color: rgb(156, 155, 155);
+  border-width: 1px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+.weather-forecast-icon{
+  width: 45px;
+
+}
+
+.weather-forecast-temperature{
+  color: grey;
+  text-shadow: -0.1px -0.1px 0 rgb(54, 53, 53), 0.1px -0.1px 0 rgb(54, 53, 53), -0.1px 0.1px 0 rgb(54, 53, 53), 0.1px 0.1px 0 rgb(54, 53, 53);
+}
+
+
+.weather-forecast-description{
+  font-size: 14px;
+  color: gray;
+  text-shadow: -0.1px -0.1px 0 rgb(54, 53, 53), 0.1px -0.1px 0 rgb(54, 53, 53), -0.1px 0.1px 0 rgb(54, 53, 53), 0.1px 0.1px 0 rgb(54, 53, 53);
+}
+.weather-forecast-weekday{
+
+  color: grey;
+  text-shadow: -0.1px -0.1px 0 rgb(54, 53, 53), 0.1px -0.1px 0 rgb(54, 53, 53), -0.1px 0.1px 0 rgb(54, 53, 53), 0.1px 0.1px 0 rgb(54, 53, 53);
+}
+
+
+.impressum{
+  color: grey;
+  text-align: center;
+
 }
