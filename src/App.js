@@ -1,13 +1,16 @@
 import React from "react";
 import './App.css';
-
+import Weather from "./Weather";
 
 
 export default function App() {
   return (
+
+
+
 <div className="App container-box" id="weather-app">
 
-
+<Weather />
 
  {/*search bar form */}
 
@@ -22,7 +25,7 @@ export default function App() {
 
 
 
-  <button className="current-location-btn col-3" onclick="getLocation()">
+  <button className="current-location-btn col-3" >
   Search for Current Location 
   </button>
 
