@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 
 
+
 export default function App() {
   return (
 <div className="App container-box" id="weather-app">
@@ -12,16 +13,16 @@ export default function App() {
 
     <form id="search-form">
       <div className="form-group row">
-        <input type="text" className="search-city col-8" id="enteredCity"  placeholder="Search for my city 🔎" />
+        <input type="text" className="search-city col-9" id="enteredCity"  placeholder="Search for my city 🔎" />
         <input type="submit"
         value="search"
-        className="col-3 location-search-button" />
+        className="col-6 location-search-button" />
       </div>
     </form>
 
 
 
-  <button className="current-location-btn" onclick="getLocation()">
+  <button className="current-location-btn col-3" onclick="getLocation()">
   Search for Current Location 
   </button>
 
@@ -29,7 +30,7 @@ export default function App() {
     <div className="current-weather-box">
     <h1 className="searched-city">Munich</h1>
     <p className="last_updated">Last updated:</p>
-    <p>
+    <p className="date-and-time">
       <span className="date" > 23.03.23 </span>
     
     <span className="time" id="current-time">04:04 </span>

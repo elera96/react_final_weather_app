@@ -15,9 +15,9 @@ body{
 
 hr{
   width: 20%;
-  margin: 10px auto;
-  color: black;
-  padding: 1px;
+  border-color: rgb(173, 173, 221);
+  border-width: 1px;
+
   
 }
 
@@ -68,9 +68,8 @@ a:hover{
   border-color: rgb(196, 194, 194);
   border-style: solid;
   border-radius: 30px;
-  padding: 10px 10px;
-  display: block;
-  margin: 25px auto;
+  padding: 10px 40px;
+  margin: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 
@@ -85,8 +84,6 @@ a:hover{
   border-width: 1 px;
   border-radius: 30px;
   padding: 10px 10px;
-  margin: 25px auto;
-  display: block;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 
 }
@@ -101,7 +98,6 @@ a:hover{
   border-radius: 30px;
   padding: 5px 5px;
   margin: 0px  auto;
-  display: block;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -111,14 +107,14 @@ a:hover{
 
 .current-weather-box{
 
-  background-color: rgb(174, 205, 212);
+  background-color: rgba(174, 205, 212, 0.658);
   background-size: cover;
   margin: 10px auto;
   padding: 30px 20px 20px 20px;
   border-style: solid;
   border-radius: 30px;
   border-width: 1px;
-  color: rgb(156, 155, 155);
+  color: black;
   text-align: center;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   
@@ -137,9 +133,12 @@ a:hover{
   margin-bottom: 4px;
 }
 
+.date-and-time{
+margin: 1px;
+}
+
 .date{
   font-size: 12px;
-  margin-bottom: 5px;
 
 }
 
@@ -153,9 +152,10 @@ a:hover{
   font-size: 70px;
   font-weight: 500;
   padding: 0 0 0 40px;
-  margin: 0;
+  margin: 10px;
 
 }
+
 
 
 .weather-description{
