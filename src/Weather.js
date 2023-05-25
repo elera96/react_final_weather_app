@@ -5,20 +5,23 @@ import './Weather.css';
 
 export default function Weather () {
 
-    const [ready, setReady] = useState(false);
-    const [temperature, setTemperature] = useState(null);
-    const [description, setDescription] = useState(null);
+    const [weatherData, setWeatherData] = useState({ready: false});
 
     function handleResponse (response) {
        
     let currentTemperature = Math.round(response.data.main.temp);
     let currentWeatherDescription = response.data.weather[0].description;
-    setTemperature (currentTemperature);
-    setDescription (currentWeatherDescription);
-    setReady(true);
+    setWeatherData ({
+        ready: true,
+        temperature: currentTemperature,
+        description: currentWeatherDescription,
+        date: "23.03.23",
+        time: "04:04",
+
+    });
     } 
 
-    if (ready){
+    if (weatherData.ready){
         return (
             <div className="App container-box" id="weather-app">
             
@@ -45,18 +48,18 @@ export default function Weather () {
                 <h1 className="searched-city">Munich</h1>
                 <p className="last_updated">Last updated:</p>
                 <p className="date-and-time">
-                  <span className="date" > 23.03.23 </span>
+                  <span className="date" > {weatherData.date} </span>
                 
-                <span className="time" id="current-time">04:04 </span>
+                <span className="time" id="current-time">{weatherData.time} </span>
               </p>
                <p className="current-temperature-total" >
-                   <span className="current-temperature"> {temperature}°C
+                   <span className="current-temperature"> {weatherData.temperature}°C
                 </span>
                 </p>
             
                 <hr/>
                 <ul>
-                <li className="weather-description" >{description}</li>
+                <li className="weather-description text-capitalize" >{weatherData.description}</li>
             
                 </ul>
             
