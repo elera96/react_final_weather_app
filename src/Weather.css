@@ -135,17 +135,9 @@ a:hover{
 
 .date-and-time{
 margin: 1px;
+font-size: 12px;
 }
 
-.date{
-  font-size: 12px;
-
-}
-
-.time {
-
-  font-size: 12px;
-}
 
 
 .current-temperature-total{
