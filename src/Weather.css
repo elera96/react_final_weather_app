@@ -125,6 +125,8 @@ a:hover{
   font-size: 50px;
   font-weight: lighter;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 
 }
 
@@ -194,11 +196,6 @@ font-size: 12px;
 
 }
 
-
-.weather-forecast-icon{
-  width: 45px;
-
-}
 
 .weather-forecast-temperature{
   color: grey;

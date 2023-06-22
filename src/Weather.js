@@ -19,12 +19,13 @@ export default function Weather (props) {
             temperature: currentTemperature,
             description: currentWeatherDescription,
             date: new Date(response.data.dt * 1000),
+            icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             newcity: response.data.name,
 
         });
     } 
 
-    if (weatherData.ready){
+   
 
         function search (){
 
@@ -45,7 +46,7 @@ export default function Weather (props) {
     
 
         }
-
+        if (weatherData.ready){
         return (
         <div className="App container-box">
             
@@ -69,7 +70,9 @@ export default function Weather (props) {
 
      }
     else{
+        search();
     return("loading...")
+    
     }    
     
 

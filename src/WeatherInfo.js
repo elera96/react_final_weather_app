@@ -4,18 +4,20 @@ import './Weather.css';
 
 
 export default function WeatherInfo (props) {
-
 return(
 
     <div>
           
      {/*current weather */}
        <div className="current-weather-box">
+       <img src={props.information.icon} alt="icon"/>
+
        <h1 className="searched-city">{props.information.newcity}</h1>
        <p className="last_updated">Last tested:</p>
        <p className="date-and-time">
        <FormattedDate date={props.information.date}/>
-     </p>
+        </p>
+       
       <p className="current-temperature-total" >
           <span className="current-temperature"> {props.information.temperature}°C
        </span>
