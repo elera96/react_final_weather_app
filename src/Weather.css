@@ -33,7 +33,7 @@ list-style-type: none;
 
 
 a{
-  color: rgb(156, 155, 155);
+  color: rgb(126, 126, 126);
   text-decoration: none;
 
 }
@@ -170,6 +170,13 @@ font-size: 12px;
 
 }
 
+
+.unit {
+
+  font-size: 25px;
+
+
+}
 
 
 /*weather forecast */

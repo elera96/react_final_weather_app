@@ -1,6 +1,8 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import './Weather.css';
+import WeatherUnit from './WeatherUnit';
+
 
 
 export default function WeatherInfo (props) {
@@ -17,11 +19,8 @@ return(
        <p className="date-and-time">
        <FormattedDate date={props.information.date}/>
         </p>
-       
-      <p className="current-temperature-total" >
-          <span className="current-temperature"> {props.information.temperature}°C
-       </span>
-       </p>
+       <WeatherUnit celcius={props.information.temperature} />
+      
    
        <hr/>
        <ul>
