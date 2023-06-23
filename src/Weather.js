@@ -60,10 +60,6 @@ export default function Weather (props) {
                   className="col-6 location-search-button"/>
                  </div>
              </form>
-
-            <button className="current-location-btn col-3" >
-            Search for Current Location 
-             </button>
  
              <WeatherInfo information={weatherData}/>
         </div>)
