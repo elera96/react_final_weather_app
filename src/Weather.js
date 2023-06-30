@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Weather.css';
 import WeatherInfo from "./WeatherInfo";
+
 
 
 
@@ -48,7 +50,7 @@ export default function Weather (props) {
         }
         if (weatherData.ready){
         return (
-        <div className="App container-box">
+        <div className="App container-box container">
             
              {/*search bar form */}
    
@@ -62,6 +64,7 @@ export default function Weather (props) {
              </form>
  
              <WeatherInfo information={weatherData}/>
+         
         </div>)
 
      }

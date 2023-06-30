@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import './Weather.css';
 import WeatherUnit from './WeatherUnit';
+import WeatherForecast from "./WeatherForecast";
 
 
 
@@ -21,14 +22,13 @@ return(
         </p>
        <WeatherUnit celcius={props.information.temperature} />
       
-   
-       <hr/>
+  
        <ul>
        <li className="weather-description text-capitalize" >{props.information.description}</li>
    
        </ul>
-    
-       <div className="weatherForecast"></div> 
+       <WeatherForecast icon={props.information.icon}/>
+        
    </div>
    <div className="impressum">
      Open-source code by Laura on <a href="https://github.com/elera96/Vanilla_Weather_App" >Github</a>
