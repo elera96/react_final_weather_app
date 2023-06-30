@@ -27,7 +27,7 @@ return(
        <li className="weather-description text-capitalize" >{props.information.description}</li>
    
        </ul>
-       <WeatherForecast icon={props.information.icon}/>
+       <WeatherForecast icon={props.information.icon} coordinates={props.information.coordinates}/>
         
    </div>
    <div className="impressum">

@@ -18,7 +18,7 @@ export default function WeatherUnit (props) {
 
     }
 
-    if (unit == `celcius`) {
+    if (unit === `celcius`) {
 
     return (
 

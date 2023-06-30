@@ -13,6 +13,7 @@ export default function Weather (props) {
     const [city, setCity] = useState(props.defaultcity);
 
     function handleResponse (response) {
+        console.log (response.data)
        
         let currentTemperature = Math.round(response.data.main.temp);
         let currentWeatherDescription = response.data.weather[0].description;
@@ -23,6 +24,7 @@ export default function Weather (props) {
             date: new Date(response.data.dt * 1000),
             icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             newcity: response.data.name,
+            coordinates: response.data.coord,
 
         });
     } 
