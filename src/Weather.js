@@ -13,7 +13,6 @@ export default function Weather (props) {
     const [city, setCity] = useState(props.defaultcity);
 
     function handleResponse (response) {
-        console.log (response.data)
        
         let currentTemperature = Math.round(response.data.main.temp);
         let currentWeatherDescription = response.data.weather[0].description;
@@ -58,10 +57,10 @@ export default function Weather (props) {
    
               <form id="search-form" onSubmit={handleSubmit}>
                 <div className="form-group row">
-                  <input type="text" className="search-city col-9" id="enteredCity"  placeholder="Search for my city 🔎"  onChange={handleCityChange}/>
+                  <input type="text" className="search-city col-7"  placeholder="Search for my city"  onChange={handleCityChange}/>
                   <input type="submit"
                   value="search"
-                  className="col-6 location-search-button"/>
+                  className="col-4 location-search-button"/>
                  </div>
              </form>
  
@@ -71,7 +70,7 @@ export default function Weather (props) {
 
      }
     else{
-        search();
+    search();
     return("loading...")
     
     }    
