@@ -17,11 +17,11 @@
   
   
   .searched-city{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: lighter;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   
   }
   
@@ -30,20 +30,23 @@
     margin-bottom: 4px;
   }
   
-  .date-and-time{
-  margin: 1px;
-  font-size: 12px;
-  }
-  
-  
-  
 
+  
+  
+  
+.temperature-information{
+
+width: 45%;
+margin: 0 auto;
+
+}
   
   
   
   .weather-description{
     padding: 0;
     margin: 0;
+    text-align: left;
   
   }
   

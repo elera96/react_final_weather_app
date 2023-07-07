@@ -13,20 +13,24 @@ return(
           
      {/*current weather */}
        <div className="current-weather-box">
-       <img src={props.information.icon} alt="icon"/>
+       
 
        <h1 className="searched-city">{props.information.newcity}</h1>
-       <p className="last_updated">Last updated:</p>
-       <p className="date-and-time">
+       <p className="last_updated">Last updated:
        <FormattedDate date={props.information.date}/>
         </p>
-       <WeatherUnit celcius={props.information.temperature} />
+       <div className="row temperature-information">
+       <img src={props.information.icon} alt="icon" className="col-6"/>
+       <span className="col-6"><WeatherUnit celcius={props.information} />
+       </span>
+       </div>
+       
+       
+       
+       
       
   
-       <ul>
-       <li className="weather-description text-capitalize" >{props.information.description}</li>
-   
-       </ul>
+       
        <WeatherForecast icon={props.information.icon} coordinates={props.information.coordinates}/>
         
    </div>
