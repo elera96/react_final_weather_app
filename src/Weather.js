@@ -45,18 +45,19 @@ export default function Weather (props) {
         }
 
         function handleCityChange (event) {
+            event.preventDefault();
             setCity(event.target.value);
     
 
         }
         if (weatherData.ready){
         return (
-        <div className="App container-box container">
+        <div className="container-box container">
             
              {/*search bar form */}
    
-              <form id="search-form" onSubmit={handleSubmit}>
-                <div className="form-group row">
+              <form onSubmit={handleSubmit}>
+                <div className="row">
                   <input type="text" className="search-city col-7"  placeholder="Search for my city"  onChange={handleCityChange}/>
                   <input type="submit"
                   value="search"

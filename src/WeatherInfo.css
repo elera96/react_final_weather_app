@@ -1,0 +1,54 @@
+
+
+.current-weather-box{
+
+    background-color: rgba(174, 205, 212, 0.658);
+    background-size: cover;
+    margin: 10px auto;
+    padding: 30px 20px 20px 20px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 1px;
+    color: black;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  
+  .searched-city{
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  
+  }
+  
+  .last_updated{
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .date-and-time{
+  margin: 1px;
+  font-size: 12px;
+  }
+  
+  
+  
+
+  
+  
+  
+  .weather-description{
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .weather-description::first-letter{
+    text-transform: capitalize;
+  }
+  
+  

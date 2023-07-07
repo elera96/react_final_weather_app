@@ -44,22 +44,16 @@ a:hover{
   cursor: default;
 }
 
-.App {
-  text-align: center;
-}
 
 .container-box{
    width:60%;
    margin: 0 auto;
+   text-align: center;
 
 }
 
 
-.search-bar{
 
-  display: block;
-  margin: 0 auto;
-}
 
 .search-city{
 

@@ -1,6 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import './Weather.css';
+import './WeatherInfo.css';
 import WeatherUnit from './WeatherUnit';
 import WeatherForecast from "./WeatherForecast";
 
@@ -16,7 +16,7 @@ return(
        <img src={props.information.icon} alt="icon"/>
 
        <h1 className="searched-city">{props.information.newcity}</h1>
-       <p className="last_updated">Last tested:</p>
+       <p className="last_updated">Last updated:</p>
        <p className="date-and-time">
        <FormattedDate date={props.information.date}/>
         </p>
@@ -31,7 +31,7 @@ return(
         
    </div>
    <div className="impressum">
-     Open-source code by Laura on <a href="https://github.com/elera96/Vanilla_Weather_App" >Github</a>
+     Open-source code by Laura on <a href="https://github.com/elera96/react_final_weather_app?" >Github</a>
    </div>
    </div>
 
