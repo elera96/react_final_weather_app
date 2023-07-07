@@ -16,10 +16,17 @@ function handleResponse (response) {
 
  if (loaded) {  
 return (
-    <div className="row">
-        <div className=" weatherForecast col">
-        <WeatherForecastDay data={forecast[0]} icon={props.icon} />
-        </div>
+            <div className="row">
+            {forecast.map(function (dailyForecast, index){
+                if (index < 4){
+                    return(
+            <div className="weatherForecast col" key={index}>
+            <WeatherForecastDay data={dailyForecast} icon={props.icon} />
+            </div>
+            )
+            }
+            })}       
+        
     </div>
 )
 }
